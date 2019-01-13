@@ -1,0 +1,226 @@
+* {
+  font-family: 'Greycliff CF', sans-serif;
+  color: #051827;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 72px;
+}
+
+h6 {
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h6 ~ h1 {
+  margin-top: 30px;
+}
+
+p {
+  font-weight: 300;
+  line-height: 1.5;
+  font-size: 16px;
+  max-width: 700px;
+}
+
+nav {
+  margin: 100px auto 0;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav a, footer a{
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+nav .links, footer .links {
+  display: flex;
+}
+
+nav .links a, footer .links a{
+  margin-left: 50px;
+}
+
+section {
+  max-width: 1300px;
+  display: flex;
+  margin: 0 auto;
+  padding: 100px 20px;
+}
+
+.hero {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.hero .description {
+  margin-top: 200px;
+  max-width: 600px;
+}
+
+.hero .image.home {
+  width: 950px;
+  height: 800px;
+  position: relative;
+  margin-right: -200px;
+}
+
+.hero .image.photography {
+  width: 750px;
+  height: 550px;
+  position: relative;
+  margin-right: 0;
+}
+
+.hero .image .phone_1 {
+  position: absolute;
+  width: 616px;
+  height: 612px;
+  z-index: 5;
+  top: 100px;
+  left: 50px;
+}
+
+.hero .image .phone_2 {
+  position: absolute;
+  width: 750px;
+  height: 434px;
+  z-index: 3;
+  top: 225px;
+  left: 0px;
+}
+
+.hero .image .shadow {
+  position: absolute;
+  width: 655px;
+  height: 335px;
+  z-index: 4;
+  bottom: 0;
+  left: 94px;
+  mix-blend-mode: multiply;
+}
+
+.hero .image .blob {
+  position: absolute;
+  left: 150px;
+  top: 0;
+}
+
+.intro p {
+  text-align: center;
+  font-size: 24px;
+  margin: 0 auto;
+}
+
+.work.landscape img {
+  width: 900px;
+  height: 600px;
+}
+
+.left {
+  justify-content: flex-start;
+}
+
+.right {
+  justify-content: flex-end;
+}
+
+.work.dual {
+  justify-content: space-around;
+}
+
+.work.dual img {
+  width: 400px;
+  height: 600px;
+}
+
+.work.dual.one a:first-child {
+  margin-top: 200px;
+}
+
+.work.dual.two a:nth-child(2) {
+  margin-top: 200px;
+}
+
+.instagram {
+  background: #001731;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
+}
+
+.instagram .logo {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.instagram .feed {
+  display: flex;
+  max-width: none;
+  margin-left: calc((50% - 825px));
+}
+
+.instagram .feed img {
+  width: 450px;
+  height: 450px;
+  margin: 0 50px;
+}
+
+.featured_image {
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 750px;
+  height: 500px;
+  z-index: 5;
+}
+
+.featured_image_background {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  background: #F1EAE5;
+  width: 750px;
+  height: 500px;
+}
+
+footer {
+  max-width: 100%;
+  background: #000E1F;
+  padding: 50px 20px;
+}
+
+footer .content{
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer a {
+  color: #fff;
+}
