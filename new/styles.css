@@ -70,6 +70,13 @@ section {
   padding: 100px 20px;
 }
 
+section .hero-link {
+  display: flex;
+  text-decoration: none;
+  width: 100%;
+  justify-content: space-between;
+}
+
 .hero {
   align-items: flex-start;
   justify-content: space-between;
@@ -313,7 +320,7 @@ footer a {
   background: #086A25;
 }
 
-.work .fansvoice h2, .work .posters h2, .work .hoxton h2{
+.work .fansvoice h2, .work .posters h2, .work .hoxton h2, .work .night h2, .work .nature h2{
   color: #fff;
 }
 
@@ -331,4 +338,24 @@ footer a {
 
 .work .illustrations {
   background: #F4F9FF
+}
+
+.work .night {
+  background: #010101;
+}
+
+.work .nature {
+  background: #AA7D3D;
+}
+
+.work .street {
+  background: #F0F1F6;
+}
+
+.work .misc {
+  background: #F0F0F9
+}
+
+.work .art {
+  background: #E4E4E6
 }
