@@ -82,9 +82,23 @@ section .hero-link {
   justify-content: space-between;
 }
 
+.hero.centered {
+  align-items: center;
+  justify-content: center;
+}
+
+.hero.centered h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .hero .description {
   margin-top: 200px;
   max-width: 600px;
+}
+
+.hero.centered .description {
+  margin-top: 100px;
 }
 
 .hero .image.home {
@@ -144,18 +158,18 @@ section .hero-link {
   margin: 0 auto;
 }
 
-.work a {
+.project a {
   position: relative;
   transition: all 0.3s ease-in-out;
 }
 
-.work img, .work .work-hover {
+.project img, .project .project-hover {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.work .work-hover {
+.project .project-hover {
   z-index: 2;
   display: flex;
   justify-content: center;
@@ -163,18 +177,18 @@ section .hero-link {
   opacity: 0;
 }
 
-.work .work-hover:hover {
+.project .project-hover:hover {
   opacity: 0.9;
   transition: all 0.3s ease-in-out;
 }
 
-.work a:hover {
+.project a:hover {
   box-shadow: 0px 12px 12px -8px #353f522b;
   transform: translatey(-6px);
   transition: all 0.3s ease-in-out;
 }
 
-.work.landscape a, .work.landscape img, .work.landscape .work-hover {
+.project.landscape a, .project.landscape img, .project.landscape .project-hover {
   width: 900px;
   height: 600px;
 }
@@ -187,20 +201,20 @@ section .hero-link {
   justify-content: flex-end;
 }
 
-.work.dual {
+.project.dual {
   justify-content: space-around;
 }
 
-.work.dual a, .work.dual img, .work.dual .work-hover {
+.project.dual a, .project.dual img, .project.dual .project-hover {
   width: 400px;
   height: 600px;
 }
 
-.work.dual.one a:first-child {
+.project.dual.one a:first-child {
   margin-top: 200px;
 }
 
-.work.dual.two a:nth-child(2) {
+.project.dual.two a:nth-child(2) {
   margin-top: 200px;
 }
 
@@ -272,6 +286,43 @@ footer a {
   color: #fff;
 }
 
+/* Page */
+
+.lazy {
+  background: #F1EAE5;
+}
+
+section.work {
+  justify-content: center;
+}
+
+.work .wide-small {
+  width: 1040px;
+  height: 693px;
+}
+
+.work .wide {
+  width: 1440px;
+}
+
+.work .wide.portrait {
+  height: 1950px;
+}
+
+.work .wide.landscape {
+  height: 866.6px;
+}
+
+.work.dual {
+  justify-content: space-around;
+  max-width: 1300px;
+}
+
+.work.dual img {
+  width: 400px;
+  height: 600px;
+}
+
 /*Animations*/
 
 @keyframes move {
@@ -312,50 +363,50 @@ footer a {
 
 /*Coloured Backgrounds*/
 
-.work .nested-brand {
+.project .nested-brand {
   background: #E4E9EC;
 }
 
-.work .fansvoice {
+.project .fansvoice {
   background: #086A25;
 }
 
-.work .fansvoice h2, .work .posters h2, .work .hoxton h2, .work .night h2, .work .nature h2{
+.project .fansvoice h2, .project .posters h2, .project .hoxton h2, .project .night h2, .project .nature h2{
   color: #fff;
 }
 
-.work .burberry {
+.project .burberry {
   background: #F1EAE5;
 }
 
-.work .posters {
+.project .posters {
   background: #8E3738;
 }
 
-.work .hoxton {
+.project .hoxton {
   background: #77443C;
 }
 
-.work .illustrations {
+.project .illustrations {
   background: #F4F9FF
 }
 
-.work .night {
+.project .night {
   background: #010101;
 }
 
-.work .nature {
+.project .nature {
   background: #AA7D3D;
 }
 
-.work .street {
+.project .street {
   background: #F0F1F6;
 }
 
-.work .misc {
+.project .misc {
   background: #F0F0F9
 }
 
-.work .art {
+.project .art {
   background: #E4E4E6
 }
