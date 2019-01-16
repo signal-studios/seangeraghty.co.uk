@@ -15,6 +15,12 @@ h1 {
   line-height: 72px;
 }
 
+h2 {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 1.5;
+}
+
 h6 {
   opacity: 0.5;
   font-weight: 500;
@@ -95,6 +101,7 @@ section {
   z-index: 5;
   top: 100px;
   left: 50px;
+  animation: float 4s ease-in-out infinite;
 }
 
 .hero .image .phone_2 {
@@ -104,6 +111,7 @@ section {
   z-index: 3;
   top: 225px;
   left: 0px;
+  animation: move 4s ease-in-out infinite;
 }
 
 .hero .image .shadow {
@@ -114,6 +122,7 @@ section {
   bottom: 0;
   left: 94px;
   mix-blend-mode: multiply;
+  animation: float-shadow 4s ease-in-out infinite;
 }
 
 .hero .image .blob {
@@ -128,7 +137,37 @@ section {
   margin: 0 auto;
 }
 
-.work.landscape img {
+.work a {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.work img, .work .work-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.work .work-hover {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.work .work-hover:hover {
+  opacity: 0.9;
+  transition: all 0.3s ease-in-out;
+}
+
+.work a:hover {
+  box-shadow: 0px 12px 12px -8px #353f522b;
+  transform: translatey(-6px);
+  transition: all 0.3s ease-in-out;
+}
+
+.work.landscape a, .work.landscape img, .work.landscape .work-hover {
   width: 900px;
   height: 600px;
 }
@@ -145,7 +184,7 @@ section {
   justify-content: space-around;
 }
 
-.work.dual img {
+.work.dual a, .work.dual img, .work.dual .work-hover {
   width: 400px;
   height: 600px;
 }
@@ -224,4 +263,72 @@ footer .content{
 
 footer a {
   color: #fff;
+}
+
+/*Animations*/
+
+@keyframes move {
+	0% {
+		transform: translate(0px);
+	}
+	50% {
+		transform: translate(10px, -5px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes float-shadow {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-10px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/*Coloured Backgrounds*/
+
+.work .nested-brand {
+  background: #E4E9EC;
+}
+
+.work .fansvoice {
+  background: #086A25;
+}
+
+.work .fansvoice h2, .work .posters h2, .work .hoxton h2{
+  color: #fff;
+}
+
+.work .burberry {
+  background: #F1EAE5;
+}
+
+.work .posters {
+  background: #8E3738;
+}
+
+.work .hoxton {
+  background: #77443C;
+}
+
+.work .illustrations {
+  background: #F4F9FF
 }
