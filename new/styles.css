@@ -1,12 +1,14 @@
 @font-face {
   font-family: Cera Pro;
   font-weight: 300;
+  font-display: swap;
   src: url(./fonts/Cera_Pro_Light.otf);
 }
 
 @font-face {
   font-family: Cera Pro;
   font-weight: 500;
+  font-display: swap;
   src: url(./fonts/Cera_Pro_Medium.otf);
 }
 
