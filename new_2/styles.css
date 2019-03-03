@@ -49,12 +49,13 @@ h6 {
   font-family: Cera Pro;
   opacity: 0.5;
   font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 3px;
+  font-size: 16px;
+  letter-spacing: 4px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
-p {
+p, h2 span {
   font-family: Cera Pro;
   font-weight: 300;
   font-size: 20px;
@@ -113,6 +114,7 @@ section.content {
 
 .intro {
   align-items: flex-start !important;
+  padding-left: 170px;
 }
 
 img.fw, video.fw {
@@ -179,6 +181,24 @@ footer a {
   margin-bottom: 100px;
 }
 
+.about {
+  margin-top: 200px !important;
+}
+
+.uni {
+  background: #051827;
+  max-width: 100% !important;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: calc((100% - 1300px)/2);
+  padding-right: calc((100% - 1300px)/2);
+}
+
+.uni .quote-background {
+  background: url('./img/dots_white.svg') repeat-x;
+  left: -400px;
+}
+
 
 /* Individual Sizes For Images */
 
@@ -199,4 +219,65 @@ footer a {
 .portobello {
   width: 400px;
   height: 388px;
+}
+
+.about_image {
+  width: 300px;
+  height: 450px;
+}
+
+
+/* Page Specific Type Rules */
+
+.about h2 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+
+.about h2 span {
+  margin-left: 20px;
+}
+
+.about h6 {
+  margin-bottom: 20px;
+}
+
+.uni h2, .uni h6, .uni p, .uni a {
+  color: #fff !important;
+}
+
+/* Instagram */
+
+.instagram {
+  background: #fff;
+  justify-content: center;
+  max-width: 100%;
+  flex-direction: column;
+  padding: 100px 0;
+}
+
+.instagram .logo {
+  font-size: 16px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.instagram .feed {
+  display: flex;
+  flex-direction: row;
+  max-width: none;
+  margin-left: calc((50% - 650px));
+}
+
+.instagram .feed img {
+  width: 450px;
+  height: 450px;
+  margin: 0 50px;
+  box-shadow: 0 25px 25px -12px rgba(0,0,0,0.10);
 }
