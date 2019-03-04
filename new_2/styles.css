@@ -75,7 +75,8 @@ a {
 
 nav {
   margin: 100px auto 200px;
-  max-width: 1300px;
+  max-width: 1340px;
+  padding: 0 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -101,10 +102,12 @@ nav .links a, footer .links a{
 }
 
 section.content {
-  max-width: 1300px;
+  max-width: 1140px;
   display: flex;
   margin: 0 auto;
   align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .content div, .intro {
@@ -114,7 +117,6 @@ section.content {
 
 .intro {
   align-items: flex-start !important;
-  padding-left: 170px;
 }
 
 img.fw, video.fw {
@@ -122,8 +124,15 @@ img.fw, video.fw {
   margin: 100px 0;
 }
 
+.right {
+  align-items: flex-end;
+}
+
+.left {
+  align-items: flex-start;
+}
+
 .right.main, .left.main {
-  margin: 0 100px;
   width: 700px;
 }
 
@@ -188,8 +197,7 @@ footer a {
 .uni {
   background: #051827;
   max-width: 100% !important;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 200px 20px !important;
   padding-left: calc((100% - 1300px)/2);
   padding-right: calc((100% - 1300px)/2);
 }
@@ -236,13 +244,14 @@ footer a {
 
 .about h2 span {
   margin-left: 20px;
+  white-space: nowrap;
 }
 
 .about h6 {
   margin-bottom: 20px;
 }
 
-.uni h2, .uni h6, .uni p, .uni a {
+.uni h2, .uni h6, .uni p, .uni a, .uni h2 span {
   color: #fff !important;
 }
 
@@ -253,7 +262,7 @@ footer a {
   justify-content: center;
   max-width: 100%;
   flex-direction: column;
-  padding: 100px 0;
+  padding: 100px 20px !important
 }
 
 .instagram .logo {
@@ -272,7 +281,6 @@ footer a {
   display: flex;
   flex-direction: row;
   max-width: none;
-  margin-left: calc((50% - 650px));
 }
 
 .instagram .feed img {
@@ -280,4 +288,69 @@ footer a {
   height: 450px;
   margin: 0 50px;
   box-shadow: 0 25px 25px -12px rgba(0,0,0,0.10);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 720px) {
+
+  .right.small, .left.small, .right.main, .left.main {
+    width: auto;
+  }
+
+  nav {
+    margin-bottom: 100px;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  h1, blockquote {
+    font-size: 40px;
+    line-height: 64px;
+  }
+
+  .quote {
+    margin-bottom: 60px;
+  }
+
+  blockquote {
+    max-width: calc(100% - 100px);
+    margin: 0;
+  }
+
+  p{
+    margin: 0 0 20px 0;
+  }
+
+  .about h2 span {
+    margin: 0;
+  }
+
+  .about {
+    margin-top: 100px !important;
+  }
+
+  .uni {
+    padding: 100px 20px !important
+  }
+
+  .about .quote-background {
+    background: none !important;
+  }
+
+  .icon-pop {
+    display: none;
+  }
+
+  .icon-list {
+    margin-top: 20px !important;
+  }
+
+  .flowchart {
+    margin: 40px 0;
+  }
+
+
 }
