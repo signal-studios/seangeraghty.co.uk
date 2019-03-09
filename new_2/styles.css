@@ -313,6 +313,7 @@ footer a {
 
 #menu_button, .close_button {
   display: none;
+  cursor: pointer;
 }
 
 /* Page Specific Type Rules */
