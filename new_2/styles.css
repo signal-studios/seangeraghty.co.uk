@@ -118,7 +118,7 @@ section.content {
 }
 
 img.fw, video.fw {
-  max-width: 100%;
+  width: 100%;
   margin: 100px 0;
 }
 
