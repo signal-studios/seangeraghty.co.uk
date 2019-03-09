@@ -125,18 +125,25 @@ img.fw, video.fw {
 
 .right {
   align-items: flex-end;
+  position: relative;
 }
 
 .left {
   align-items: flex-start;
+  position: relative;
 }
 
 .right.main, .left.main {
   width: 700px;
+  
 }
 
 .right.small, .left.small {
-  width: 500px
+  width: 500px;
+}
+
+.project .main.right, .project .main.left {
+  align-items: flex-end;
 }
 
 .divider {
@@ -159,12 +166,26 @@ blockquote {
 
 .quote-background {
   position: absolute;
-  background: url('./img/dots.svg') repeat-x;
-  background-size: 795px 195px;
+  background: url(./img/dots.svg) no-repeat;
+  background-size: contain;
   background-position: center;
-  width: 795px;
-  height: 195px;
-  left: -285px;
+  width: 580px;
+  height: 200px;
+  right: 0;
+  z-index: -10;
+}
+
+.button {
+  border: 1px solid #0A3039;
+  padding: 20px;
+  font-family: Cera Pro;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #051827;
+  letter-spacing: 4px;
+  line-height: 24px;
+  margin-right: auto;
+  margin-left: 70px;
 }
 
 footer {
@@ -207,6 +228,47 @@ footer a {
   left: -400px;
 }
 
+.content.project {
+  margin-top: 100px;
+}
+
+.project .left .quote-background {
+  right: 25px;
+  bottom: -50px;
+}
+
+
+.project .right .quote-background {
+  left: 25px;
+  bottom: -50px;
+}
+
+.content.hero {
+  z-index: -1;
+  padding: 316px 100px 200px;
+  max-width: 100%;
+  margin-top: -332px;
+  flex-direction: column;
+  align-items: flex-start;
+  background-image: url('./img/home/phone.png'), linear-gradient(-180deg, #FFCCCC 0%, #FFB6B6 100%);
+  background-position: right bottom, center;
+  background-repeat: no-repeat, repeat;
+  background-size: 670px 584px, auto;
+}
+
+.content.hero div {
+  max-width: 1140px;
+  margin: 0 auto;
+  align-items: flex-start;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.content.hero h1, .content.hero a {
+  max-width: 500px;
+  margin-left: 50px;
+}
+
 
 /* Individual Sizes For Images */
 
@@ -234,6 +296,11 @@ footer a {
   height: 450px;
 }
 
+.project_image {
+  width: 400px;
+  height: 600px;
+}
+
 
 /* Page Specific Type Rules */
 
@@ -258,7 +325,6 @@ footer a {
 /* Instagram */
 
 .instagram {
-  background: #fff;
   justify-content: center;
   max-width: 100%;
   flex-direction: column;
