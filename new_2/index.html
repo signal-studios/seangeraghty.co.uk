@@ -19,11 +19,23 @@
       caption: false
     });
   </script>
+  <script>
+    function openMenu() {
+      document.getElementById("menu").classList.toggle("show");
+      document.getElementById("menu_button").classList.toggle("hide");
+    }
+    function closeMenu() {
+      document.getElementById("menu").classList.toggle("hide");
+      document.getElementById("menu_button").classList.toggle("show");
+    }
+  </script>
 </head>
 <body>
   <nav>
     <a href="https://seangeraghty.co.uk/">Sean Geraghty</a>
-    <div class="links">
+    <a onclick="openMenu()" id="menu_button" href="#">Menu</a>
+    <div class="links" id="menu">
+      <a onclick="openMenu()" href="#" class="close_button">╳</a>
       <a href="./index.html">Design</a>
       <a href="#">Photography</a>
       <a href="./about.html">About</a>
@@ -32,20 +44,20 @@
   <section class="content hero">
     <div>
       <h1>How do you sell a house from your phone?</h1>
-      <a class="button">View project</a>
+      <a class="button" href="./project_1.html">View project</a>
     </div>
   </section>
   <section class="content project">
     <div class="left small">
-      <img class="project_image" src="./img/home/brand_home.png">
+      <a href="./project_2.html"><img class="project_image" src="./img/home/brand_home.png"></a>
       <div class="quote-background"></div>
     </div>
     <div class="right main">
-      <h1>Branding a startup in an untrusted industry</h1>
-      <a class="button">View project</a>
+      <a href="./project_2.html"><h1>Branding a startup in an untrusted industry</h1></a>
+      <a class="button" href="./project_1.html">View project</a>
     </div>
   </section>
-  <section class="content project">
+  <section class="content project swap">
     <div class="left main">
       <h1>Designing a better customer experience at Burberry</h1>
       <a class="button">View project</a>
