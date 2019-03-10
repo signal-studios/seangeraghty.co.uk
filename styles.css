@@ -399,6 +399,7 @@ img.last {
   height: 450px;
   margin: 0 50px;
   box-shadow: 0 25px 25px -12px rgba(0,0,0,0.10);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Hover States */
@@ -407,6 +408,12 @@ a:hover .project_image, a:hover .about_image {
   margin-top: -10px;
   margin-bottom: 10px;
   box-shadow: 0 25px 25px -12px rgba(0,0,0,0.10);
+  transition: all 0.2s ease-in-out;
+}
+
+.instagram .feed img:hover {
+  margin-top: -10px;
+  box-shadow: 0 35px 35px -12px rgba(0,0,0,0.10);
   transition: all 0.2s ease-in-out;
 }
 
