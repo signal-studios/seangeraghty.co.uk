@@ -185,7 +185,13 @@ blockquote {
   line-height: 24px;
   margin-right: auto;
   margin-left: 70px;
-  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a.button:hover {
+  background: #051827;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
 }
 
 footer {
@@ -301,6 +307,7 @@ footer a {
   height: auto;
   max-width: 300px;
   max-height: 450px;
+  transition: all 0.2s ease-in-out;
 }
 
 .project_image {
@@ -308,6 +315,7 @@ footer a {
   max-height: 600px;
   width: 100%;
   height: auto;
+  transition: all 0.2s ease-in-out;
 }
 
 .show {
@@ -387,6 +395,15 @@ footer a {
   height: 450px;
   margin: 0 50px;
   box-shadow: 0 25px 25px -12px rgba(0,0,0,0.10);
+}
+
+/* Hover States */
+
+a:hover .project_image, a:hover .about_image {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  box-shadow: 0 25px 25px -12px rgba(0,0,0,0.10);
+  transition: all 0.2s ease-in-out;
 }
 
 /* Media Queries */
