@@ -216,6 +216,10 @@ footer a {
   margin-bottom: 100px;
 }
 
+img.last {
+  margin-bottom: -3px;
+}
+
 .about {
   margin-top: 200px !important;
 }
