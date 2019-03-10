@@ -214,6 +214,10 @@ footer a {
   margin-top: 200px !important;
 }
 
+.about .quote-background {
+  left: -480px;
+}
+
 .uni {
   background: #051827;
   max-width: 100% !important;
@@ -224,8 +228,9 @@ footer a {
 }
 
 .uni .quote-background {
-  background: url('./img/dots_white.svg') repeat-x;
-  left: -400px;
+  background-image: url(./img/dots_white.svg);
+  z-index: 0;
+  background-size: 795px;
 }
 
 .content.project {
@@ -245,7 +250,7 @@ footer a {
 
 .content.hero {
   z-index: -1;
-  padding: 316px 100px 200px;
+  padding: 316px 0 200px;
   max-width: 100%;
   margin-top: -332px;
   flex-direction: column;
@@ -264,7 +269,7 @@ footer a {
   width: 100%;
 }
 
-.content.hero h1, .content.hero a {
+.content.hero h1, .content.hero .button {
   max-width: 500px;
   margin-left: 50px;
 }
@@ -292,8 +297,10 @@ footer a {
 }
 
 .about_image {
-  width: 300px;
-  height: 450px;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  max-height: 450px;
 }
 
 .project_image {
@@ -336,8 +343,12 @@ footer a {
   color: #fff !important;
 }
 
-.project a {
+.hero a, .project a {
   text-decoration: none;
+}
+
+.content.hero a {
+  margin-left: 0;
 }
 
 .right h1, .left h1 {
@@ -477,7 +488,7 @@ footer a {
     max-width: calc(100% - 100px);
   }
 
-  .content.hero h1, .content.hero a, .right h1, .left h1 {
+  .content.hero h1, .content.hero .button, .right h1, .left h1 {
     margin-left: 0;
   }
 
@@ -492,6 +503,11 @@ footer a {
   footer .content, footer .links {
     margin-top: 20px !important;
     flex-direction: column !important;
+  }
+
+  .about_image {
+    max-width: 100%;
+    max-height: none;
   }
 
 }
