@@ -588,4 +588,8 @@ a:hover .project_image, a:hover .about_image {
     margin-bottom: 40px;
   }
 
+  .right h1 {
+    margin-left: 0;
+  }
+
 }
