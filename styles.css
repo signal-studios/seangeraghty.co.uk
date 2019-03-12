@@ -161,7 +161,6 @@ blockquote {
   position: relative;
   justify-content: center;
   margin-left: 100px;
-  overflow: hidden;
 }
 
 .quote-background {
@@ -585,6 +584,10 @@ a:hover .project_image, a:hover .about_image, .instagram .feed img:hover {
 
   .right h1 {
     margin-left: 0;
+  }
+
+  .content {
+    overflow: hidden;
   }
 
 }
