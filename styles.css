@@ -146,7 +146,8 @@ img.fw, video.fw {
 }
 
 .divider {
-  width: 980px;
+  width: 100%;
+  max-width: 980px;
   height: 1px;
   background: #0A3039;
   opacity: 0.5;
