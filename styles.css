@@ -161,6 +161,7 @@ blockquote {
   position: relative;
   justify-content: center;
   margin-left: 100px;
+  overflow: hidden;
 }
 
 .quote-background {
