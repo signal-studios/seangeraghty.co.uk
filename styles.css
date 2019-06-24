@@ -588,6 +588,7 @@ a:hover .project_image, a:hover .about_image, .instagram .feed img:hover {
   }
 
   .content {
+    width: 100%;
     overflow: hidden;
   }
 
