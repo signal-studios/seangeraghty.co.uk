@@ -107,7 +107,12 @@ strong {
   transition: all 0.2s ease;
 }
 
-.button.border:hover {
+.button:focus, .button:active {
+  outline: none;
+  margin: 2px 0 -2px;
+}
+
+.button.border:hover, .button.border:active, .button.border:focus {
   margin: 0;
 }
 
@@ -132,6 +137,7 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 0 0 calc(50% - 75px);
 }
 
 /* Content */
@@ -218,8 +224,8 @@ section.hero {
 }
 
 input, select {
-  width: 228px;
   border: 1px solid #D0D6DC;
+  box-sizing: border-box;
   border-radius: 4px;
   font-size: 16px;
   color: #1D2630;
@@ -229,7 +235,6 @@ input, select {
 }
 
 select {
-  width: 250px;
   height: 48px;
   background: #fff;
 }
@@ -242,6 +247,7 @@ input:focus, select:focus {
 .form_field {
   display: flex;
   flex-direction: column;
+  flex: 0 0 calc(50% - 10px);
 }
 
 .form_terms, .form_submit {
@@ -336,8 +342,12 @@ section.middle {
   max-width: 500px;
 }
 
-.values .title h2 {
+.values.pink .title h2 {
   color: #EE6895;
+}
+
+.values.purple .title h2 {
+  color: #804EFD;
 }
 
 .quote h2 {
@@ -359,6 +369,7 @@ section.middle {
   background: url('./img/nurses.jpg') no-repeat center;
   background-size: cover;
   height: 70vh;
+  flex: unset;
 }
 
 .img_careers {
@@ -367,6 +378,7 @@ section.middle {
   background: url('./img/careers_person.jpg') no-repeat center;
   background-size: cover;
   min-height: 70vh;
+  flex: unset;
 }
 
 .author img {
@@ -615,6 +627,8 @@ section.bio {
 .instagram article:nth-child(3) {
   order: 2;
   margin-left: 75px;
+  align-self: flex-end;
+  margin-bottom: 125px;
 }
 
 .instagram article:nth-child(4) {
@@ -658,7 +672,13 @@ section.bio {
 }
 
 .button.purple:hover,  .purple .button:hover {
+  background: #9977EE;
   box-shadow: 0 5px 12px -3px #9977EE;
+}
+
+.button.purple:active, .button.purple:focus, .purple .button:active, .purple .button:focus{
+  background: #6e35fd;
+  box-shadow: 0 5px 8px -7px #9977EE;
 }
 
 .purple .quote h2::before, .purple .quote h2::after {
@@ -719,18 +739,22 @@ section.bio {
 
 .bg_circle_purple {
   background: url('./img/circle_purple.svg') no-repeat;
+  background-size: contain;
 }
 
 .bg_circle_pink {
   background: url('./img/circle_pink.svg') no-repeat;
+  background-size: contain;
 }
 
 .bg_circle_yellow {
   background: url('./img/circle_yellow.svg') no-repeat;
+  background-size: contain;
 }
 
 .bg_circle_green {
   background: url('./img/circle_green.svg') no-repeat;
+  background-size: contain;
 }
 
 .green .author img {
@@ -743,6 +767,10 @@ section.bio {
 
 .pink .author img {
   border: 5px solid #EE6895;
+}
+
+.hero_purple {
+  background: #F5F2FD;
 }
 
 
@@ -791,21 +819,18 @@ section.bio {
 }
 
 .img_shifts {
-  width: 660px;
-  height: 420px;
-  margin-left: -70px;
+  width: 100%;
+  height: auto;
 }
 
 .img_sheets {
-  width: 640px;
-  height: 420px;
-  margin-left: -110px;
+  width: 100%;
+  height: auto;
 }
 
 .img_nav_shifts {
-  width: 500px;
-  height: 400px;
-  margin-left: 0;
+  width: 100%;
+  height: auto;
 }
 
 .show {
@@ -825,6 +850,39 @@ section.bio {
   display: none;
 }
 
+.registration_point {
+  margin-bottom: 30px;
+}
+
+.registration_point::before {
+  content: " ";
+  background: #F5F2FD;
+  border: 2px solid #9977EE;
+  height: 20px;
+  width: 20px;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left: -40px;
+  margin-bottom: -30px;
+  box-sizing: border-box;
+}
+
+.registration_point ul {
+  margin-left: 20px;
+}
+
+.values .left .registration_point p {
+  margin-bottom: 0px;
+}
+
+.signup .right {
+  flex: 0 0 calc(50% + 20px);
+}
+
+.signup .left {
+  flex: 0 0 calc(50% - 150px);
+}
+
 
 /* Media Queries */
 
@@ -835,7 +893,6 @@ section.bio {
     width: calc(1920px + ((100vw - 2210px)/2));
     background-position: center left 1180px;
   }
-
 }
 
 @media only screen and (min-width: 1441px) {
@@ -859,6 +916,19 @@ section.bio {
 
   .hero h1, .hero p {
     max-width: 50%;
+  }
+
+  .values .right {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+
+  .form {
+    max-width: calc(100% - 200px);
+  }
+
+  .signup .right, .signup .left {
+    flex: 0 0 100%;
   }
 
 }
@@ -895,6 +965,7 @@ section.bio {
 
   .left, .right {
     margin: 50px 0;
+    flex: 0 0 100%;
   }
   
   footer section,  .footer_left {
@@ -927,6 +998,7 @@ section.bio {
     padding: 0;
     background: none;
     box-shadow: none;
+    max-width: none;
   }
 
   .form_submit {
@@ -934,7 +1006,7 @@ section.bio {
   }
 
   .form_field {
-    width: calc(100% - 22px);
+    flex: 0 0 100%;
   }
 
   input, .form_terms, .img_nurses, .img_careers{
@@ -1182,6 +1254,10 @@ section.bio {
   .job_role {
     width: calc(100% - 10px);
     max-width: none;
+  }
+
+  .values .right {
+    margin-left: 0;
   }
 
 }
