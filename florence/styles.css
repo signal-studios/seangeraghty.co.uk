@@ -853,7 +853,8 @@ section.bio {
   }
 
   .hero {
-    margin-left: 20px;
+    margin: 0 20px;
+    width: calc(100vw - 115px);
   }
 
   .hero h1, .hero p {
