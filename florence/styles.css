@@ -528,12 +528,24 @@ footer li.title{
   width: 100%;
   max-width: 450px;
   justify-content: space-between;
-  margin-top: 10px;
+  align-items: center;
+  margin: 10px 0 20px;
+  text-decoration: none;
 }
 
 .right .job_role p {
   margin-left: 0px;
   font-weight: 500;
+}
+
+.job_role p + p {
+  margin-top: 0;
+}
+
+.job_role p:nth-child(2) {
+  background: #fcedf2;
+  padding: 10px 20px;
+  border-radius: 4px;
 }
 
 .about_section .right {
@@ -1102,7 +1114,6 @@ section.bio_2 {
 
   .buttons .button, .middle .buttons .button {
     width: calc(100% - 40px);
-    margin-bottom: 20px;
   }
 
   .buttons .button:nth-child(2) {
