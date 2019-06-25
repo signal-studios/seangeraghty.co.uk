@@ -9,19 +9,23 @@
   <title>Florence</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./styles.css">
+  <script type="text/javascript" src="./scripts.js"></script>
   <link rel='shortcut icon' href='./favicon.ico' type='image/x-icon'/ >
 </head>
 <body>
   <nav>
     <a href="#"><img class="logo" src="./img/logo.svg"></a>
-    <div class="links">
+    <div class="links" id="menu">
+      <a onclick="toggleMenu()" class="close_button"><img src="./img/close.svg"></a>
+      <h4 class="mobile_links_header">Links</h4>
       <a href="#">Nurses</a>
       <a href="#">Carers</a>
       <a href="#">Care Homes</a>
       <a href="#">How it works</a>
-      <a class="button purple" href="#">Sign In</a>
     </div>
-  </nav> 
+    <a class="button purple" href="#">Sign In</a>
+    <a onclick="toggleMenu()" id="menu_button"><img src="./img/menu.svg"></a>
+  </nav>
   <section class="hero hero_home">
     <h1>Book your shifts the easy way</h1>
     <p>Florence is the online marketplace seamlessly connecting independent nurses and carers with the shifts they want. <strong>No agency required.</strong></p>
@@ -85,8 +89,9 @@
     </div>
   </section>
   <section class="middle purple">
-    <div class="fw_img">
+    <div class="fw_img worker_to_client">
       <img src="./img/worker_to_client.png">
+      <img src="./img/worker_to_client_mobile.png">
     </div>   
     <h2>Florence seemlessly connects nurses and carers to care homes across the UK</h2>
     <p>We’re streamling the process of booking temporary shifts. Making it easier than ever to be an independent nurse or carer.</p>
@@ -112,7 +117,7 @@
       <p>Your timesheet is sent straight to the care home and when it’s approved you’ll be paid straight into your bank, seven days later.</p>
     </div>
   </section>
-  <section class="pink how">
+  <section class="pink how reorder">
     <div class="left">
       <h2>We’re not an agency we’re a marketplace and that puts you in control</h2>
       <p>Whether you’re a nurse, carer or care home, Florence puts you back in the driving seat. No agency. No middleman. Each shift page includes a detailed description, location information and the pay rate so both sides always know exactly what to expect.</p>
@@ -139,7 +144,7 @@
       </div>
     </div>
   </section>
-  <section class="purple how">
+  <section class="purple how reorder">
     <div class="left">
       <h2>Take the leap and become your own boss</h2>
       <p>By booking your own shifts through Florence you’ll have an unrivaled opportunity to set your own schedule and be in control of your financial and professional life.</p>
@@ -153,7 +158,7 @@
       <img src="./img/nav_shifts.png" class="img_nav_shifts">
     </div>
   </section>
-  <section class="yellow">
+  <section class="yellow reorder">
     <div class="left">
       <div class="quote">
         <h2>You can see all the available shifts, the money you'll earn and the location you have to go to...it's so easy to use</h2>
