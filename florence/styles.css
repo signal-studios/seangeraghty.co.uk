@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 300;
+  font-display: swap;
+  src: url(./fonts/EuclidSquare-Light.otf);
+}
+
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 500;
+  font-display: swap;
+  src: url(./fonts/EuclidSquare-Medium.otf);
+}
+
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+  src: url(./fonts/EuclidSquare-LightItalic.otf;
+}
+
+@font-face {
+  font-family: 'Euclid Square';
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+  src: url(./fonts/EuclidSquare-MediumItalic.otf;
+}
+
 * {
   font-family: 'Euclid Square', sans-serif;
   -webkit-font-smoothing: antialiased;
