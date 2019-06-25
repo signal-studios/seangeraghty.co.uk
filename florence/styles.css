@@ -738,22 +738,22 @@ section.bio {
 }
 
 .bg_circle_purple {
-  background: url('./img/circle_purple.svg') no-repeat;
+  background: url('./img/circle_purple.svg') center no-repeat;
   background-size: contain;
 }
 
 .bg_circle_pink {
-  background: url('./img/circle_pink.svg') no-repeat;
+  background: url('./img/circle_pink.svg') center no-repeat;
   background-size: contain;
 }
 
 .bg_circle_yellow {
-  background: url('./img/circle_yellow.svg') no-repeat;
+  background: url('./img/circle_yellow.svg') center no-repeat;
   background-size: contain;
 }
 
 .bg_circle_green {
-  background: url('./img/circle_green.svg') no-repeat;
+  background: url('./img/circle_green.svg') center no-repeat;
   background-size: contain;
 }
 
