@@ -609,9 +609,10 @@ section.bio_2 {
 }
 
 .team_hiring {
-  background: #EFFBF6;
+  background: #FCEDF2;
   padding: 20px;
   margin: -20px -20px 30px -20px!important;
+  border-radius: 4px;
 }
 
 .worker_to_client img:nth-child(2){
