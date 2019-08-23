@@ -20,15 +20,15 @@
       <h4 class="mobile_links_header">Links</h4>
       <a href="#">Nurses</a>
       <a href="#">Carers</a>
-      <a href="#">Care Homes</a>
+      <a href="#">Care homes</a>
       <a href="#">How it works</a>
     </div>
     <a class="button purple" href="#">Sign In</a>
     <a onclick="toggleMenu()" id="menu_button"><img src="./img/menu.svg"></a>
   </nav>
   <section class="hero hero_home">
-    <h1>Book your shifts the easy way</h1>
-    <p>Florence is the online marketplace seamlessly connecting independent nurses and carers with the shifts they want. <strong>No agency required.</strong></p>
+    <h1>Book shifts the easy way</h1>
+    <p>Florence is the online marketplace seamlessly connecting independent nurses and carers with the shifts they want. <strong>Take control.</strong></p>
     <div class="buttons">
       <a class="button purple">Sign up</a>
       <a class="button pink">Learn more</a>
@@ -36,8 +36,8 @@
   </section>
   <section class="signup">
     <div class="left">
-      <h2>Register with Florence in under a minute</h2>
-      <p>After you registered we need a few more details to make you active and ready to book shifts on our platform. Please make sure you have the following:</p>
+      <h2>Sign up with Florence in under a minute</h2>
+      <p>You'll need:</p>
       <ul>
         <li>NMC PIN (Nurses only)</li>
         <li>At least one year of work experience</li>
@@ -46,20 +46,24 @@
         <li>Two references</li>
         <li>Passport/Biometric ID Card (to confirm you identity)</li>
       </ul>
-      <p><a href="#">Click here</a> to see a detailed checklist of everything you need to find shifts and become active on Florence.</p>
+      <p><a href="/checklist">Click here</a> to see a detailed checklist of everything you need to start booking shifts on Florence.</p>
     </div>
     <div class="right bg_circle_purple">
       <div class="form">
         <div class="form_field">
-          <label for="fname">First Name</label>
+          <label for="fname">First name</label>
           <input id="fname" type="text">
         </div>
         <div class="form_field">
-          <label for="sname">Last Name</label>
+          <label for="sname">Last name</label>
           <input id="sname" type="text">
         </div>
         <div class="form_field">
-          <label for="email">Email Address</label>
+          <label for="postcode">Postcode</label>
+          <input id="postcode" type="text">
+        </div>
+        <div class="form_field">
+          <label for="email">Email address</label>
           <input id="email" type="email">
         </div>
         <div class="form_field">
@@ -67,14 +71,23 @@
           <input id="password" type="password">
         </div>
         <div class="form_field">
-          <label for="postcode">Postcode</label>
-          <input id="postcode" type="text">
+          <label for="password">Confirm password</label>
+          <input id="password" type="password">
         </div>
         <div class="form_field">
-          <label for="role">Job Title</label>
+          <label for="role">Job title</label>
           <select name="role">
+            <option value="" disabled selected hidden>-</option>
             <option value="carer">Carer</option>
             <option value="nurse">Nurse</option>
+          </select>
+        </div>
+        <div class="form_field">
+          <label for="payment">How would you like to be paid?</label>
+          <select name="role">
+            <option value="" disabled selected hidden>-</option>
+            <option value="carer">Through my LTD company</option>
+            <option value="nurse">Through PAYE</option>
           </select>
         </div>
         <div class="form_terms">
@@ -82,8 +95,8 @@
           <input id="terms" type="checkbox">
         </div>
         <div class="form_submit">
-          <p>Please complete the form to sign up</p>
-          <input id="submit" type="submit" class="button purple" value="Sign Up To Florence">
+          <a href="#">Unsure how you'd like to be paid?</a>
+          <input id="submit" type="submit" class="button purple" value="Sign up">
         </div>
       </div>
     </div>
@@ -93,11 +106,10 @@
       <img src="./img/worker_to_client.png">
       <img src="./img/worker_to_client_mobile.png">
     </div>   
-    <h2>Florence seemlessly connects nurses and carers to care homes across the UK</h2>
-    <p>We’re streamling the process of booking temporary shifts. Making it easier than ever to be an independent nurse or carer.</p>
+    <h2>Florence connects nurses and carers to care homes across the UK</h2>
+    <p>We’re streamlining the process of booking temporary shifts, making it easier than ever to be an independent nurse or carer.</p>
     <div class="buttons">
       <a class="button">Sign up</a>
-      <a class="button border">Learn more</a>
     </div>
   </section>
   <section class="three_points">
@@ -113,14 +125,14 @@
     </div>
     <div class="point">
       <img>
-      <h3>Submit your timesheet online and get paid 7 days later</h3>
-      <p>Your timesheet is sent straight to the care home and when it’s approved you’ll be paid straight into your bank, seven days later.</p>
+      <h3>Submit your timesheet online, anytime, anywhere</h3>
+      <p>Your timesheet is sent straight to the care home and is approved online - no paper, no signatures, no hassle.</p>
     </div>
   </section>
   <section class="pink how reorder">
     <div class="left">
-      <h2>We’re not an agency we’re a marketplace and that puts you in control</h2>
-      <p>Whether you’re a nurse, carer or care home, Florence puts you back in the driving seat. No agency. No middleman. Each shift page includes a detailed description, location information and the pay rate so both sides always know exactly what to expect.</p>
+      <h2>We’re the marketplace that puts you in control</h2>
+      <p>Whether you’re a nurse, carer or care home, Florence puts you back in the driving seat. Each shift page includes a detailed description, location information and the pay rate so both sides always know exactly what to expect.</p>
       <div class="buttons">
         <a class="button">Florence vs Agency</a>
         <a class="button border">Sign up</a>
@@ -136,22 +148,20 @@
     </div>
     <div class="right">
       <h2>View your upcoming work schedule and manage your payments online</h2>
-      <p>With Florence, you can easily manage your work schedule, view your upcoming shifts and submit timesheets from anywhere. Once your timesheet is approved, you are paid directly into your bank account, exactly 7 days later.</p>
+      <p>With Florence, you can easily manage your work schedule, view your upcoming shifts and submit timesheets from anywhere.</p>
       <p>No more paper timesheets means no more signatures.<br>Oh and it’s better for the environment too!</p>
       <div class="buttons">
-        <a class="button">How Payments Work</a>
-        <a class="button border">Sign up</a>
+        <a class="button">Sign up</a>
       </div>
     </div>
   </section>
   <section class="purple how reorder">
     <div class="left">
       <h2>Take the leap and become your own boss</h2>
-      <p>By booking your own shifts through Florence you’ll have an unrivaled opportunity to set your own schedule and be in control of your financial and professional life.</p>
-      <p>You’ll also get to sample different workplaces, meet new people and travel across the UK to broadening your professional experience.</p>
+      <p>By booking your own shifts through Florence you set your own schedule and take control of your financial and professional life.</p>
+      <p>You can sample different workplaces, meet new people and travel across the UK to broaden your professional experience.</p>
       <div class="buttons">
-        <a class="button">Florence vs Agency</a>
-        <a class="button border">Sign up</a>
+        <a class="button">Sign up</a>
       </div>
     </div>
     <div class="right bg_circle_purple">
@@ -175,10 +185,9 @@
   </section>
   <section class="middle purple"> 
     <h2>Sign up with Florence today </h2>
-    <p>Our platform allows care homes to communicate with and post shifts directly to self-employed nurses and carers across the country. Workers then get to pick and choose which shifts to apply for right inside the platform.</p>
+    <p>Our platform allows care homes to communicate with and post shifts directly to nurses and carers across the country.</p>
     <div class="buttons">
       <a class="button">Sign up to Florence</a>
-      <a class="button border">How Florence Works</a>
     </div>
   </section>
   <div class="divider pink"></div>

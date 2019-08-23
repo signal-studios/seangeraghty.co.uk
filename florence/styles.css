@@ -88,6 +88,10 @@ p, li, label {
   color: #1D2630;
 }
 
+.form_submit a {
+  color: #6e35fd;
+}
+
 ul {
   margin: 10px;
 }
@@ -111,7 +115,6 @@ strong {
 }
 
 .button {
-  text-transform: capitalize;
   padding: 10px 20px;
   border-radius: 8px;
   color: #fff;
@@ -269,6 +272,8 @@ select {
   background: #fff;
 }
 
+select:invalid { color: #5F6F81; }
+
 input:focus, select:focus {
   border: 1px solid #804EFD;
   outline: 0;
@@ -289,7 +294,7 @@ input:focus, select:focus {
 }
 
 .form_terms {
-  padding: 20px;
+  padding: 14px 20px;
   margin-top: 10px;
   border-radius: 4px;
   border: 1px solid #D0D6DC;
@@ -781,22 +786,22 @@ section.bio_2 {
 }
 
 .bg_circle_purple {
-  background: url('./img/circle_purple.svg') center no-repeat;
+  background: url('./img/circle_purple.svg') top no-repeat;
   background-size: contain;
 }
 
 .bg_circle_pink {
-  background: url('./img/circle_pink.svg') center no-repeat;
+  background: url('./img/circle_pink.svg') top no-repeat;
   background-size: contain;
 }
 
 .bg_circle_yellow {
-  background: url('./img/circle_yellow.svg') center no-repeat;
+  background: url('./img/circle_yellow.svg') top no-repeat;
   background-size: contain;
 }
 
 .bg_circle_green {
-  background: url('./img/circle_green.svg') center no-repeat;
+  background: url('./img/circle_green.svg') top no-repeat;
   background-size: contain;
 }
 
