@@ -6,7 +6,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="description" content="">
   <meta name="keywords" content="">
-  <title>Florence</title>
+  <title>What do I need to register? - Florence</title>
   <link rel="stylesheet" href="./reset.css">
   <link rel="stylesheet" href="./styles.css">
   <script type="text/javascript" src="./scripts.js"></script>
@@ -18,10 +18,8 @@
     <div class="links" id="menu">
       <a onclick="toggleMenu()" class="close_button"><img src="./img/close.svg"></a>
       <h4 class="mobile_links_header">Links</h4>
-      <a href="#">Nurses</a>
-      <a href="#">Carers</a>
+      <a href="#">Nurses & carers</a>
       <a href="#">Care Homes</a>
-      <a href="#">How it works</a>
     </div>
     <a class="button purple" href="#">Sign In</a>
     <a onclick="toggleMenu()" id="menu_button"><img src="./img/menu.svg"></a>
@@ -89,57 +87,57 @@
     </div>
   </section>
   <div class="divider purple"></div>
-  <section class="signup">
-    <div class="left">
-      <h2>Register with Florence in under a minute</h2>
-      <p>After you registered we need a few more details to make you active and ready to book shifts on our platform. Please make sure you have the following:</p>
-      <ul>
-        <li>NMC PIN (Nurses only)</li>
-        <li>At least one year of work experience</li>
-        <li>Enhanced DBS certificate</li>
-        <li>Up-to-date training certificates</li>
-        <li>Two references</li>
-        <li>Passport/Biometric ID Card (to confirm you identity)</li>
-      </ul>
-      <p><a href="#">Click here</a> to see a detailed checklist of everything you need to find shifts and become active on Florence.</p>
-    </div>
-    <div class="right bg_circle_purple">
-      <div class="form">
-        <div class="form_field">
-          <label for="fname">First Name</label>
-          <input id="fname" type="text">
-        </div>
-        <div class="form_field">
-          <label for="sname">Last Name</label>
-          <input id="sname" type="text">
-        </div>
-        <div class="form_field">
-          <label for="email">Email Address</label>
-          <input id="email" type="email">
-        </div>
-        <div class="form_field">
-          <label for="password">Password</label>
-          <input id="password" type="password">
-        </div>
-        <div class="form_field">
-          <label for="postcode">Postcode</label>
-          <input id="postcode" type="text">
-        </div>
-        <div class="form_field">
-          <label for="role">Job Title</label>
-          <select name="role">
-            <option value="carer">Carer</option>
-            <option value="nurse">Nurse</option>
-          </select>
-        </div>
-        <div class="form_terms">
-          <label for="terms">I agree to Florence’s <a href="#">terms & conditions</a> and <a href="#">privacy policy</a></label>
-          <input id="terms" type="checkbox">
-        </div>
-        <div class="form_submit">
-          <p>Please complete the form to sign up</p>
-          <input id="submit" type="submit" class="button purple" value="Sign Up To Florence">
-        </div>
+  <section class="signup center">
+    <h2>Sign up with Florence in under a minute</h2>
+    <p>Sign up to Florence and take control of your work life right away by entering your details in the form below.</p>
+    <div class="form">
+      <div class="form_field">
+        <label for="fname">First name</label>
+        <input id="fname" type="text">
+      </div>
+      <div class="form_field">
+        <label for="sname">Last name</label>
+        <input id="sname" type="text">
+      </div>
+      <div class="form_field">
+        <label for="postcode">Postcode</label>
+        <input id="postcode" type="text">
+      </div>
+      <div class="form_field">
+        <label for="email">Email address</label>
+        <input id="email" type="email">
+      </div>
+      <div class="form_field">
+        <label for="password">Password</label>
+        <input id="password" type="password">
+      </div>
+      <div class="form_field">
+        <label for="password">Confirm password</label>
+        <input id="password" type="password">
+      </div>
+      <div class="form_field">
+        <label for="role">Job title</label>
+        <select name="role">
+          <option value="" disabled selected hidden>-</option>
+          <option value="carer">Carer</option>
+          <option value="nurse">Nurse</option>
+        </select>
+      </div>
+      <div class="form_field">
+        <label for="payment">How would you like to be paid?</label>
+        <select name="role">
+          <option value="" disabled selected hidden>-</option>
+          <option value="carer">Through my LTD company</option>
+          <option value="nurse">Through PAYE</option>
+        </select>
+      </div>
+      <div class="form_terms">
+        <label for="terms">I agree to Florence’s <a href="#">terms & conditions</a> and <a href="#">privacy policy</a></label>
+        <input id="terms" type="checkbox">
+      </div>
+      <div class="form_submit">
+        <a href="#">Unsure how you'd like to be paid?</a>
+        <input id="submit" type="submit" class="button purple" value="Sign up">
       </div>
     </div>
   </section>

@@ -279,6 +279,33 @@ input:focus, select:focus {
   outline: 0;
 }
 
+.center {
+  flex-direction: column;
+  align-items: center;
+}
+
+.center h2 {
+  text-align: center;
+  max-width: 700px;
+}
+
+.center p {
+  text-align: center;
+  max-width: 600px;
+}
+
+.center.signup p {
+  margin-bottom: 50px;
+}
+
+.center .form {
+  margin: 0 0 50px 0;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  max-width: 650px;
+}
+
 .form_field {
   display: flex;
   flex-direction: column;
@@ -290,7 +317,7 @@ input:focus, select:focus {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .form_terms {
@@ -1072,7 +1099,7 @@ section.bio_2 {
   }
 
   select, .form_submit #submit {
-    width: calc(100vw - 20px);
+    width: 100%;
   }
 
   .right .form_submit p {
@@ -1124,6 +1151,10 @@ section.bio_2 {
   .buttons .button:nth-child(2) {
     margin-left: 0;
     width: calc(100% - 4px);
+  }
+
+  .left .buttons .button:nth-child(2), .right .buttons .button:nth-child(2) {
+    margin-top: 20px;
   }
 
   .point, .values .buttons {
@@ -1317,6 +1348,10 @@ section.bio_2 {
 
   .bio .profile_img {
     max-width: 100%;
+  }
+
+  .form_submit a {
+    margin-bottom: 20px;
   }
 
 }
