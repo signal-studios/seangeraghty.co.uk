@@ -1,3 +1,17 @@
+@font-face {
+  font-family: Archia;
+  font-weight: 400;
+  font-display: swap;
+  src: url(./fonts/Archia-Regular.otf);
+}
+
+@font-face {
+  font-family: Archia;
+  font-weight: 600;
+  font-display: swap;
+  src: url(./fonts/Archia-SemiBold.otf);
+}
+
 * {
   font-family: 'Archia', monospace;
   color: #FFFFFF;
