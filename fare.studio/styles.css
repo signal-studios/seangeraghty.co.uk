@@ -1,0 +1,42 @@
+* {
+  font-family: 'Archia', monospace;
+  color: #FFFFFF;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: #0F241A;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 160px;
+  color: #FFFFFF;
+  line-height: 180px;
+  max-width: 800px;
+}
+
+p, a {
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  line-height: 32px;
+}
+
+nav {
+  padding: 48px;
+}
+
+.logo {
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 48px;
+}
