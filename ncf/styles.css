@@ -46,7 +46,7 @@ h1 {
   font-size: 56px;
   color: #1D2630;
   line-height: 72px;
-  max-width: 600px;
+  max-width: 640px;
   margin-bottom: 20px;
 }
 
@@ -56,7 +56,7 @@ h2 {
   color: #1D2630;
   line-height: 52px;
   margin-bottom: 20px;
-  max-width: 500px
+  max-width: 560px
 }
 
 h3 {
@@ -82,7 +82,7 @@ p, li, label {
   font-size: 16px;
   color: #3D5066;
   line-height: 28px;
-  max-width: 550px;
+  max-width: 560px;
 }
 
 ul {
@@ -144,8 +144,8 @@ p + p {
 }
 
 section {
-  max-width: 1280px;
   margin: 80px auto;
+  padding: 0 80px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -157,9 +157,8 @@ nav {
   height: 48px;
   display: flex;
   align-items: center;
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 40px 80px;
   justify-content: space-between;
 }
 
@@ -185,22 +184,21 @@ nav .links a {
   color: #3D5066;
   height: 24px;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 24px;
 }
 
 nav a.button {
   color: #fff;
+  margin-right: 0;;
 }
 
 .hero {
-  padding: 160px 0;
+  padding: 160px 80px;
   margin-top: 0;
-  margin-left: 70px;
-  width: calc(100vw - 145px);
   flex-direction: column;
-  background: url('./assets/national_care_force_hero.png') no-repeat;
-  background-size: 480px 480px;
-  background-position: center right;
+  background: url('./assets/national_care_force_message.png') no-repeat, url('./assets/nurse_phone.png') no-repeat;
+  background-size: 336px 136px, 400px 480px;
+  background-position: center right 100px, center right;
 }
 
 .hero .button {
@@ -208,13 +206,10 @@ nav a.button {
   margin-right: 24px;
 }
 
-section.hero {
-  max-width: none;;
-}
-
 .hero p {
   font-size: 20px;
   line-height: 36px;
+  max-width: 50%;
 }
 
 input, select {
@@ -251,6 +246,7 @@ select {
 .three {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 40px 0;
 }
 
@@ -258,7 +254,14 @@ select {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: calc((100%/3) - 80px);
+  padding: 20px;
   max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.center h3, .center p {
+  text-align: center;
 }
 
 .point img.number {
@@ -268,12 +271,15 @@ select {
 }
 
 .three-buttons {
-  margin-top: 40px;;
+  margin-top: 26px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .three-buttons .button{
-  width: 184px;
-  margin: 0 12px;
+  width: 160px;
+  margin: 12px;
 }
 
 section.signup {
@@ -282,17 +288,20 @@ section.signup {
   margin: 160px auto 0;
 }
 
+.signup div {
+  max-width: calc(50% - 20px);
+}
+
 .signup .form {
   display: flex;
   flex-wrap: wrap;
-  max-width: 616px;
   justify-content: space-between;
 }
 
 .signup .question {
   display: flex;
   flex-direction: column;
-  width: 296px;
+  width: calc(50% - 20px);
 }
 
 .signup .question label {
@@ -332,4 +341,69 @@ footer p {
 footer img {
   margin-left: 8px;
   height: 26px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1) {
+
+  h1 {
+    font-size: 36px;
+    line-height: 52px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  nav {
+    margin: 0;
+    padding: 24px 8px;
+  }
+  
+  section, section.hero {
+    margin: 40px 8px;
+    padding: 0;
+  }
+
+  section.signup {
+    padding: 24px 8px;
+    margin: 40px 0;
+  }
+
+  .hero {
+    padding: 0;
+    background: none;
+  }
+
+  .hero .buttons {
+    flex-direction: column;
+  }
+
+  .hero .button {
+    margin: 8px 0;
+  }
+
+  .three .point, .signup div, .hero p {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .three {
+    justify-content: center;
+  }
+
+  .signup .form {
+    margin-top: 40px;
+  }
+
+  .signup .question {
+    width: 100%;
+  }
+
+  .signup button {
+    width: 100%;
+    margin-top: 24px;
+  }
+
 }
