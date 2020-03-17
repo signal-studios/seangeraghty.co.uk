@@ -86,7 +86,7 @@ p, li, label {
 }
 
 ul {
-  margin: 8px 0 8px -16px;
+  margin: 8px 0;
 }
 
 li::before {
@@ -208,6 +208,18 @@ nav a.button {
   background: url('./assets/nurse_phone.png') no-repeat;
   background-size: 400px 480px;
   background-position: center right 120px;
+}
+
+.v-hero {
+  background: url('./assets/volunteer.png') no-repeat;
+  background-size: 210px 480px;
+  background-position: center right 240px;
+}
+
+.cp-hero {
+  background: url('./assets/care_providers.png') no-repeat;
+  background-size: 480px 480px;
+  background-position: center right 80px;
 }
 
 .hero .button {
