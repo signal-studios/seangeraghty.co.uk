@@ -74,11 +74,13 @@ a {
 }
 
 nav {
-  margin: 100px auto 200px;
-  max-width: 1340px;
-  padding: 0 20px;
+  margin: 50px;
+  width: calc(100% - 100px);
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 10;
 }
 
 nav a, footer a{
@@ -113,7 +115,8 @@ section.content {
   flex-direction: column;
 }
 
-.intro {
+section.intro {
+  padding-top: 200px;
   align-items: flex-start !important;
 }
 
@@ -262,7 +265,6 @@ img.last {
 .content.hero {
   z-index: -1;
   max-width: 100%;
-  margin-top: -332px;
   flex-direction: column;
   align-items: flex-start;
   background-image: url('./img/home/florence_app.png'), linear-gradient(-180deg, #F5F2FD 0%, #E4DCFA 100%);
@@ -466,8 +468,9 @@ a:hover .project_image, a:hover .about_image, .instagram .feed img:hover {
   }
 
   nav {
-    margin: 50px auto 100px;
     flex-wrap: wrap;
+    margin: 50px 20px;
+    width: calc(100% - 40px);
   }
 
   #menu_button, .close_button {
@@ -545,7 +548,6 @@ a:hover .project_image, a:hover .about_image, .instagram .feed img:hover {
 
   .content.hero {
     background-image: linear-gradient(-180deg, #F5F2FD 0%, #E4DCFA 100%);
-    margin-top: -182px;
   }
 
   .swap {
